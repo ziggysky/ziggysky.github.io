@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latents</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Link to your favicon -->
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        body {
+            background: linear-gradient(145deg, #121212, #1a1a1a);
+        }
+
+        text {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-weight: 300;
+            letter-spacing: 0.1em;
+        }
+
+        @media (max-width: 600px) {
+            text {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="centered">
+        <svg width="260" height="60">
+            <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#a6a6a6" />
+                    <stop offset="100%" style="stop-color:#d1d1d1" />
+                </linearGradient>
+            </defs>
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="url(#gradient)" font-size="36">latents</text>
+        </svg>
+    </div>
+</body>
+</html>
